@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../helsinkiwebdevelopment/part2/phonebook && npm run build && cp -r build ../helsinkiwebdevserver",
     "deploy": "fly deploy",
     "deploy:full": "npm run build:ui && npm run deploy",
-    "logs:prod": "fly logs"
+    "logs:prod": "fly logs",
+    "lint": "eslint ."
   },
   "proxy": "http://localhost:3001",
   "author": "",
